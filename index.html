@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Xenomorph</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"/>
+        <style>
+        .tabs {
+margin-bottom: -1px !important;
+position: relative;
+}
+.tab-content {
+padding: 60px;
+top: 197px;
+color: #000;
+background-color: white;
+}
+.tab-pane {
+display: none;
+}
+.tab-pane.is-active {
+display: block;
+width: 50%;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+}
+.is-active {
+display: initial;
+}
+        </style>
+      <script type="module" crossorigin src="/assets/index-OMfjGxyP.js"></script>
+    </head>
+    <body>
+        <!-- is-info appears to add nice colours. -->
+        <section class="hero is-info">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">Xenomorph</h1>
+                    <p class="subtitle">Comparisons between I360, Banner and minor mods. Abbreviation of long titles.</p>
+                </div>
+            </div>
+            <div id="nav" class="tabs is-boxed is-centered main-menu">
+                <ul>
+                    <li id="1" data-target="pane-1" class="is-active"><a>I360-Banner</a></li>
+                    <li id="2" data-target="pane-2"><a>Minor mods-Banner</a></li>
+                    <li id="3" data-target="pane-3"><a>Long titles to short</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div id="pane-1" class="tab-pane is-active" style="display: block">
+                    <div class="fixed-grid has-2-cols">
+                    <div class="grid">
+                        <!--<form id="dataInput">-->
+                        <div class="cell">
+                        <div class="field">
+                            <label class="label" for="BannerCodes">Copy and paste the column of Banner codes below.</label>
+                            <div class="control">
+                                <textarea class="textarea" id="BannerCodes" name="BannerCodes" rows="10" cols="6"></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="BannerTitles">Copy and paste the column of Banner titles below.</label>
+                            <div class="control">
+                                <textarea class="textarea" id="BannerTitles" name="BannerTitles" rows ="10" cols="10"></textarea>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="cell">
+                        <div class="field">
+                            <label class="label" for="I360Codes">Copy and paste the column of I360 codes below.</label>
+                            <div class="control">
+                                <textarea class="textarea" id="I360Codes" placeholder="I360 codes go here." name="I360Codes" rows="10" cols="6"></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="I360Titles">Copy and paste the column of I360 titles below.</label>
+                            <div class="control">
+                                <textarea class="textarea" id="I360Titles" placeholder="I360 titles go here." name="I360Titles" rows="10" cols="10"></textarea>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="cell is-col-span-2 has-text-centered">
+                            <input class="button" type="submit" value="Compare"/>
+                        </div>
+                        <!-- </form> -->
+                    </div>
+                    </div>
+                    <div class="fixed-grid has-2-cols">
+                    <div class="grid">
+                        <div class="cell">
+                            <p>Programmes in Banner, missing in the I360 codes provided and if they are found in the titles:</p>
+                            <textarea class="textarea" id="Banner-I360" rows="50" cols="20"></textarea>
+                        </div>
+                        <div class="cell">
+                            <p>Programmes from the I360 codes, missing in the Banner codes provided and if they are found in the titles:</p>
+                            <textarea class="textarea" id="I360-Banner" rows="50" cols="20"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div id="pane-2" class="tab-pane" style="display: none">
+
+                </div>
+                <div id="pane-3" class="tab-pane" style="display: none">
+                    <div class="field has-addons">
+                        <!--<div class="field-label">
+                            <label class="label" for="longTitle"></label>
+                        </div>-->
+                        <div class="field-body">
+                            <div class="control is-expanded">
+                                <input id="longTitle" class="input" type="text" placeholder="Long title" />
+                            </div>
+                            <div class="control">
+                                <button id="submitLongTitle" class="button is-info">
+                                    Abbreviate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="crseKind" checked />
+                            Programme title
+                        </label>
+                        <br />
+                        <label class="radio">
+                            <input type="radio" name="crseKind" />
+                            Module title
+                        </label>
+                    </div>
+                    <p class="has-text-weight-semibold has-text-centered">Short title:</p>
+                    <p id="abbr" class="has-text-centered"> </p>
+                    <p id="shortTitleWarning" class="has-text-centered" style="color: var(--bulma-danger)"></p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Xenomorph</strong> for the CDM Team. Credit to Aron Lewis for the name.
+                </p>
+            </div>
+        </footer>
+        <!--<script src="JBLib.js" type="module"></script>
+        <script src="LongTitleAbbreviator.js" type="module"></script>
+        <script src="LongTitleToShort.js" type="module"></script>
+        <script src="TitleDeconstructor.js" type="module"></script>-->
+    </body>
+</html>
