@@ -4,33 +4,9 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Xenomorph</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"/>
-        <style>
-        .tabs {
-margin-bottom: -1px !important;
-position: relative;
-}
-.tab-content {
-padding: 60px;
-top: 197px;
-color: #000;
-background-color: white;
-}
-.tab-pane {
-display: none;
-}
-.tab-pane.is-active {
-display: block;
-width: 50%;
-position: relative;
-left: 50%;
-transform: translateX(-50%);
-}
-.is-active {
-display: initial;
-}
-        </style>
-      <script type="module" crossorigin src="/assets/index-OMfjGxyP.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
+      <script type="module" crossorigin src="/assets/index-m4aLyC29.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-BaXr6YMo.css">
     </head>
     <body>
         <!-- is-info appears to add nice colours. -->
@@ -57,13 +33,13 @@ display: initial;
                         <div class="field">
                             <label class="label" for="BannerCodes">Copy and paste the column of Banner codes below.</label>
                             <div class="control">
-                                <textarea class="textarea" id="BannerCodes" name="BannerCodes" rows="10" cols="6"></textarea>
+                                <textarea class="textarea" id="BannerCodes" placeholder="Banner codes go here." name="BannerCodes" rows="10" cols="6"></textarea>
                             </div>
                         </div>
                         <div class="field">
                             <label class="label" for="BannerTitles">Copy and paste the column of Banner titles below.</label>
                             <div class="control">
-                                <textarea class="textarea" id="BannerTitles" name="BannerTitles" rows ="10" cols="10"></textarea>
+                                <textarea class="textarea" id="BannerTitles" placeholder="Banner titles go here." name="BannerTitles" rows ="10" cols="10"></textarea>
                             </div>
                         </div>
                         </div>
@@ -82,7 +58,7 @@ display: initial;
                         </div>
                         </div>
                         <div class="cell is-col-span-2 has-text-centered">
-                            <input class="button" type="submit" value="Compare"/>
+                            <input class="button" id="dataInput" type="submit" value="Compare"/>
                         </div>
                         <!-- </form> -->
                     </div>
@@ -130,16 +106,23 @@ display: initial;
                             Module title
                         </label>
                     </div>
-                    <p class="has-text-weight-semibold has-text-centered">Short title:</p>
-                    <p id="abbr" class="has-text-centered"> </p>
-                    <p id="shortTitleWarning" class="has-text-centered" style="color: var(--bulma-danger)"></p>
+                    <div class="control p-4">
+                        <label>Upper percentage bound on how much of a word to abbreviate</label>
+                        <input type="range" class="slider is-fullwidth" id="abbrPercentSlider" name="abbrPercent" min="0" max="100" value="100" />
+                        <p class="has-text-centered">Percentage upper bound: <span id="abbrPercentDisplay">100</span>%</p>
+                    </div>
+                    <div class="p-4">
+                        <p class="has-text-weight-semibold has-text-centered">Short title:</p>
+                        <p id="abbr" class="has-text-centered"> </p>
+                        <p id="shortTitleWarning" class="has-text-centered" style="color: var(--bulma-danger)"></p>
+                    </div>
                 </div>
             </div>
         </section>
         <footer class="footer">
             <div class="content has-text-centered">
                 <p>
-                    <strong>Xenomorph</strong> for the CDM Team. Credit to Aron Lewis for the name.
+                    <strong>Xenomorph</strong> for the CDM Team. Credit to <strong>Aron</strong> for the name.
                 </p>
             </div>
         </footer>
