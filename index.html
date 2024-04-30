@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Xenomorph</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
-      <script type="module" crossorigin src="/assets/index-m4aLyC29.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-BaXr6YMo.css">
+      <script type="module" crossorigin src="/assets/index-CfEoRcP7.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-DDQglQcn.css">
     </head>
     <body>
         <!-- is-info appears to add nice colours. -->
@@ -106,15 +106,33 @@
                             Module title
                         </label>
                     </div>
-                    <div class="control p-4">
+                    <div class="control p-4 mb-6">
                         <label>Upper percentage bound on how much of a word to abbreviate</label>
-                        <input type="range" class="slider is-fullwidth" id="abbrPercentSlider" name="abbrPercent" min="0" max="100" value="100" />
-                        <p class="has-text-centered">Percentage upper bound: <span id="abbrPercentDisplay">100</span>%</p>
+                        <input type="range" class="slider is-fullwidth" id="abbrPercentSlider" name="abbrPercent" min="1" max="100" value="100" />
+                        <p class="has-text-centered">How much of a word to abbreviate at most: <span id="abbrPercentDisplay">100</span>%</p>
                     </div>
-                    <div class="p-4">
-                        <p class="has-text-weight-semibold has-text-centered">Short title:</p>
-                        <p id="abbr" class="has-text-centered"> </p>
-                        <p id="shortTitleWarning" class="has-text-centered" style="color: var(--bulma-danger)"></p>
+                    <div class="mb-6">
+                        <h4 class="title is-4 has-text-centered mb-4">Suggested short titles:</h4>
+                        <div id="abbrs">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="title is-4 has-text-centered mb-4">Smörgåsbord of short titles:</h4>
+                        <p class="mb-4">Select the number of abbreviation percentages to sample for the smörgåsbord:</p>
+                        <div id="sizeSelector" class="buttons mb-5">
+                            <button class="button">One</button>
+                            <button class="button">Two</button>
+                            <button class="button">Three</button>
+                            <button class="button">Four</button>
+                            <button class="button is-focused">Five</button>
+                            <button class="button">Six</button>
+                            <button class="button">Seven</button>
+                            <button class="button">Eight</button>
+                            <button class="button">Nine</button>
+                            <button class="button">Ten</button>
+                        </div>
+                        <div id="smorgasbord">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,6 +141,9 @@
             <div class="content has-text-centered">
                 <p>
                     <strong>Xenomorph</strong> for the CDM Team. Credit to <strong>Aron</strong> for the name.
+                </p>
+                <p>
+                    <strong>Version 0.1.2</strong> (<em>alpha</em>-stage software with many bugs present)
                 </p>
             </div>
         </footer>
