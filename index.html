@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Xenomorph</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
-      <script type="module" crossorigin src="/assets/index-CfEoRcP7.js"></script>
+      <script type="module" crossorigin src="/assets/index-7QyZ7mcz.js"></script>
       <link rel="stylesheet" crossorigin href="/assets/index-DDQglQcn.css">
     </head>
     <body>
@@ -15,6 +15,10 @@
                 <div class="container">
                     <h1 class="title">Xenomorph</h1>
                     <p class="subtitle">Comparisons between I360, Banner and minor mods. Abbreviation of long titles.</p>
+                </div>
+                <div class="container m-4">
+                    <p>Submit feedback, including suggestions, using the following form:</p>
+                    <p><a href="https://forms.office.com/e/8mcMyxDjEs">https://forms.office.com/e/8mcMyxDjEs</a></p>
                 </div>
             </div>
             <div id="nav" class="tabs is-boxed is-centered main-menu">
@@ -95,21 +99,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="control">
-                        <label class="radio">
-                            <input type="radio" name="crseKind" checked />
-                            Programme title
-                        </label>
-                        <br />
-                        <label class="radio">
-                            <input type="radio" name="crseKind" />
-                            Module title
-                        </label>
-                    </div>
                     <div class="control p-4 mb-6">
                         <label>Upper percentage bound on how much of a word to abbreviate</label>
                         <input type="range" class="slider is-fullwidth" id="abbrPercentSlider" name="abbrPercent" min="1" max="100" value="100" />
-                        <p class="has-text-centered">How much of a word to abbreviate at most: <span id="abbrPercentDisplay">100</span>%</p>
+                        <p class="has-text-centered">Limit of how much of a word to abbreviate: <span id="abbrPercentDisplay">100</span>%</p>
                     </div>
                     <div class="mb-6">
                         <h4 class="title is-4 has-text-centered mb-4">Suggested short titles:</h4>
@@ -117,19 +110,23 @@
                         </div>
                     </div>
                     <div class="mb-6">
-                        <h4 class="title is-4 has-text-centered mb-4">Smörgåsbord of short titles:</h4>
-                        <p class="mb-4">Select the number of abbreviation percentages to sample for the smörgåsbord:</p>
-                        <div id="sizeSelector" class="buttons mb-5">
-                            <button class="button">One</button>
-                            <button class="button">Two</button>
-                            <button class="button">Three</button>
-                            <button class="button">Four</button>
-                            <button class="button is-focused">Five</button>
-                            <button class="button">Six</button>
-                            <button class="button">Seven</button>
-                            <button class="button">Eight</button>
-                            <button class="button">Nine</button>
-                            <button class="button">Ten</button>
+                        <div class="mb-5">
+                            <h4 class="title is-4 has-text-centered mb-4">Smörgåsbord of short titles:</h4>
+                            <p class="mb-4">Select the number of abbreviation percentages to sample for the smörgåsbord:</p>
+                            <div id="sizeSelector" class="buttons mb-4">
+                                <button class="button">One</button>
+                                <button class="button">Two</button>
+                                <button class="button">Three</button>
+                                <button class="button">Four</button>
+                                <button class="button is-focused">Five</button>
+                                <button class="button">Six</button>
+                                <button class="button">Seven</button>
+                                <button class="button">Eight</button>
+                                <button class="button">Nine</button>
+                                <button class="button">Ten</button>
+                            </div>
+                            <!--<p class="mb-4">The number to sample can also be select in the box below:</p>
+                            <input type="number" id="sizeTicker" min="1" max="20" value="5" />-->
                         </div>
                         <div id="smorgasbord">
                         </div>
@@ -143,8 +140,12 @@
                     <strong>Xenomorph</strong> for the CDM Team. Credit to <strong>Aron</strong> for the name.
                 </p>
                 <p>
-                    <strong>Version 0.1.2</strong> (<em>alpha</em>-stage software with many bugs present)
+                    <strong>Version 0.2.0</strong> (<em>beta</em>-stage software, please report bugs)
                 </p>
+            </div>
+            <div class="m-4 has-text-centered">
+                <p>Submit feedback, including suggestions, using the following form:</p>
+                <p><a href="https://forms.office.com/e/8mcMyxDjEs">https://forms.office.com/e/8mcMyxDjEs</a></p>
             </div>
         </footer>
         <!--<script src="JBLib.js" type="module"></script>
