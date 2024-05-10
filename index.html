@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Xenomorph</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
-      <script type="module" crossorigin src="/assets/index-7QyZ7mcz.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-DDQglQcn.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script type="module" crossorigin src="/assets/index-IXjNMIJp.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-CLrk0j9e.css">
     </head>
     <body>
         <!-- is-info appears to add nice colours. -->
@@ -24,7 +25,7 @@
             <div id="nav" class="tabs is-boxed is-centered main-menu">
                 <ul>
                     <li id="1" data-target="pane-1" class="is-active"><a>I360-Banner</a></li>
-                    <li id="2" data-target="pane-2"><a>Minor mods-Banner</a></li>
+                    <li id="2" data-target="pane-2"><a>Data Validation-Banner</a></li>
                     <li id="3" data-target="pane-3"><a>Long titles to short</a></li>
                 </ul>
             </div>
@@ -81,7 +82,35 @@
                     </div>
                 </div>
                 <div id="pane-2" class="tab-pane" style="display: none">
-
+                    <div class="box filesUpload">
+                        <p class="block">Upload a data validation spreadsheet and a report of modules in Banner.</p>
+                        <div class="block">
+                            <div class="file is-info has-name">
+                                <label class="file-label">
+                                    <input class="file-input" type="file" name="validationSheet" />
+                                    <span class="file-cta">
+                                        <span class="file-icon">
+                                            <i class="fas fa-upload">&#xf093;</i>
+                                        </span>
+                                        <span class="file-label"> Choose a data validation spreadsheet.</span>
+                                    </span>
+                                    <span class="file-name">Select a file...</span>
+                                </label>
+                            </div>
+                            <div class="file is-info has-name">
+                                <label class="file-label">
+                                    <input class="file-input" type="file" name="modulesReport" />
+                                    <span class="file-cta">
+                                        <span class="file-icon">
+                                            <i class="fas fa-upload">&#xf093;</i>
+                                        </span>
+                                        <span class="file-label"> Choose a report of modules in Banner.</span>
+                                    </span>
+                                    <span class="file-name">Select a file...</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="pane-3" class="tab-pane" style="display: none">
                     <div class="field has-addons">
